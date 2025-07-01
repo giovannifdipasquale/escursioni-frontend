@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* CSS VARs */
+:root {
+  --amethyst: #7D6EAC;
+  --white: #FFFFFF;
+  --graish-yellow: rgb(187, 185, 153);
+  /* --graish-yellow: rgb(163, 155, 168); */
+  --smoky-black: #1D1A05;
+  --smoky-black-t: #1d1a05b4;
+}
+
+/* Background Utility Classes */
+.bg-amet {
+  background-color: var(--amethyst);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-smoky-black {
+  background-color: var(--smoky-black);
+}
+
+.bg-gy {
+  background-color: var(--graish-yellow);
+}
+
+/* Text Color Utility Classes */
+.text-amet {
+  color: var(--amethyst);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-smoky-black {
+  color: var(--smoky-black);
+}
+
+.text-smoky-black-t {
+  color: var(--smoky-black-t);
+}
+
+.text-gy {
+  color: var(--graish-yellow);
+}
