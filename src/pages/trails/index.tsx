@@ -121,7 +121,9 @@ export default function TrailsPage({ trails, pagination }: TrailsPageProps) {
                   {trail.cover_image?.data && (
                     <div className="relative w-full aspect-w-16 aspect-h-9">
                       <Image
-                        src={`http://localhost:1337${trail.cover_image.data.attributes.url}`}
+                        src={`${process.env.NEXT_PUBLIC_API_URL || ""}${
+                          trail.cover_image.data.attributes.url
+                        }`}
                         alt={
                           trail.cover_image.data.attributes.alternativeText ||
                           trail.title

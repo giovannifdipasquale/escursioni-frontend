@@ -62,7 +62,9 @@ export default function hutsPage({ huts, pagination }: hutsPageProps) {
                 {hut.cover_image?.data && (
                   <div className="relative w-full aspect-w-16 aspect-h-9">
                     <Image
-                      src={`http://localhost:1337${hut.cover_image.data.attributes.url}`}
+                      src={`${process.env.NEXT_PUBLIC_API_URL || ""}${
+                        hut.cover_image.data.attributes.url
+                      }`}
                       alt={
                         hut.cover_image.data.attributes.alternativeText ||
                         hut.name

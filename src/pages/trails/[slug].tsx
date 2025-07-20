@@ -84,7 +84,9 @@ export default function TrailDetail({ trail }: TrailDetailProps) {
         {trail.cover_image?.data && (
           <div className="relative w-full aspect-w-16 aspect-h-9 mb-6">
             <Image
-              src={`http://localhost:1337${trail.cover_image.data.attributes.url}`}
+              src={`${process.env.NEXT_PUBLIC_API_URL || ""}${
+                trail.cover_image.data.attributes.url
+              }`}
               alt={
                 trail.cover_image.data.attributes.alternativeText || trail.title
               }
@@ -112,7 +114,9 @@ export default function TrailDetail({ trail }: TrailDetailProps) {
         {trail.gpx_file?.data && (
           <div className="mb-4">
             <a
-              href={`http://localhost:1337${trail.gpx_file.data.attributes.url}`}
+              href={`${process.env.NEXT_PUBLIC_API_URL || ""}${
+                trail.gpx_file.data.attributes.url
+              }`}
               className="text-blue-600 hover:underline"
               target="_blank"
               rel="noopener noreferrer"

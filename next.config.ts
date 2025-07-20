@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "**.strapi.io",
+        hostname: "https://strapi-backend-bjvm.onrender.com",
         pathname: "/uploads/**",
       },
     ],
