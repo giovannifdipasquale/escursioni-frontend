@@ -78,7 +78,7 @@ export default function Home({ homepage }: HomepageProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const res = await api.get("/homepage?populate=*");
+    const res = await page?populate=*");
     const data = res.data.data;
 
     if (!data) {
